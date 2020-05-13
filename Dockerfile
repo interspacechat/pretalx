@@ -22,10 +22,10 @@ ENV LC_ALL=C.UTF-8
 
 
 COPY pretalx/src /pretalx/src
-COPY deployment/docker/pretalx.bash /usr/local/bin/pretalx
-COPY deployment/docker/supervisord.conf /etc/supervisord.conf
-COPY deployment/docker/nginx.conf /etc/nginx/nginx.conf
-COPY deployment/docker/certbot/conf /etc/letsencrypt
+COPY conf/pretalx.bash /usr/local/bin/pretalx
+COPY conf/supervisord.conf /etc/supervisord.conf
+COPY conf/nginx.conf /etc/nginx/nginx.conf
+COPY conf/certbot/conf /etc/letsencrypt
 
 RUN chown www-data:www-data -R /etc/letsencrypt
 
