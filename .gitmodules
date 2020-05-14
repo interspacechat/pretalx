@@ -1,0 +1,3 @@
+[submodule "pretalx"]
+	path = pretalx
+	url = git://github.com/pretalx/pretalx
