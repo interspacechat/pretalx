@@ -38,7 +38,8 @@ docker-compose run --rm --entrypoint "\
 echo
 
 
-echo "### Starting nginx ..."
+echo "### Starting pretalx ..."
+docker build --tag pretalx .
 docker-compose up --force-recreate -d pretalx
 echo
 
