@@ -20,7 +20,6 @@ RUN apt-get update && \
 
 ENV LC_ALL=C.UTF-8
 
-
 COPY pretalx/src /pretalx/src
 COPY conf/pretalx.bash /usr/local/bin/pretalx
 COPY conf/supervisord.conf /etc/supervisord.conf
